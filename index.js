@@ -16,10 +16,10 @@ const client = new Client({
 
 client.login(process.env.DISCORD_TOKEN);
 
-// Initialize OpenAI client to point to DeepSeek
+// Initializing OpenAI client to point to DeepSeek
 const openai = new OpenAI({
-    baseURL: 'https://openrouter.ai/api/v1', // DeepSeek API base URL
-    apiKey: process.env.DEEPSEEK_API_KEY,   // Use your DeepSeek API key from .env
+    baseURL: 'https://openrouter.ai/api/v1', 
+    apiKey: process.env.DEEPSEEK_API_KEY,   
 });
 
 client.on('ready', () => {
